@@ -5,6 +5,7 @@ import Register from './pages/Register';
 import Kalkulator from './pages/Kalkulator';
 import Keranjang from './pages/Keranjang';
 import Katalog from './pages/Katalog';
+import Detail from './pages/Detail';
 
 function App() {
   return (
@@ -16,6 +17,7 @@ function App() {
           <Route path='/kalkulator' element={<Kalkulator/>}></Route>
           <Route path='/keranjang' element={<Keranjang/>}></Route>
           <Route path='/katalog' element={<Katalog/>}></Route>
+          <Route path='/detail' element={<Detail/>}></Route>
         </Routes>
       </Router>
     )
