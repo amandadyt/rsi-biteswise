@@ -10,17 +10,20 @@ const Navbar = () => {
             </div>
             
             <div className="font-medium">
-                <Link to='/' className="cursor-pointer text-teal-700 hover:text-teal-500 py-3 px-8 font-bold">
+                <Link to='/' className="duration-200 cursor-pointer text-teal-700 hover:text-teal-500 py-3 px-8 font-bold">
                     Beranda
                 </Link>
-                <Link to='/kalkulator' className="cursor-pointer text-teal-700 hover:text-teal-500 py-3 px-8 font-bold">
+                <Link to='/kalkulator' className="duration-200 cursor-pointer text-teal-700 hover:text-teal-500 py-3 px-8 font-bold">
                     Kalkulator BMI
                 </Link>
-                <Link to='/katalog' className="cursor-pointer text-teal-700 hover:text-teal-500 py-3 px-8 font-bold">
+                <Link to='/katalog' className="duration-200 cursor-pointer text-teal-700 hover:text-teal-500 py-3 px-8 font-bold">
                     Katalog
                 </Link>
-                <Link to='/keranjang' className="cursor-pointer text-teal-700 hover:text-teal-500 py-3 px-8 font-bold">
+                <Link to='/keranjang' className="duration-200 cursor-pointer text-teal-700 hover:text-teal-500 py-3 px-8 font-bold">
                     Keranjang
+                </Link>
+                <Link to='/profil' className="duration-200 cursor-pointer text-teal-700 hover:text-teal-500 py-3 px-8 font-bold">
+                    Profil
                 </Link>
             </div>
         </div>

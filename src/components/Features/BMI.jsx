@@ -22,7 +22,7 @@ const BMI = () => {
                 setMessage('Berat Ideal')
             }
             else if(bmi >=23.0 && bmi <24.9){
-                setMessage('Berat Ideal')
+                setMessage('Berat Berlebih')
             }
             else{
                 setMessage('Obesitas')

@@ -16,10 +16,10 @@ const Deskripsi = () => {
             </div>
 
             <div className="pt-10">
-                <Link to='/login' className="bg-teal-100 cursor-pointer rounded-full hover:bg-teal-500 hover:text-white py-3 px-8 font-bold">
+                <Link to='/login' className="duration-200 bg-teal-100 cursor-pointer rounded-full hover:bg-teal-500 hover:text-white py-3 px-8 font-bold">
                     Login
                 </Link>
-                <Link to='/register' className="bg-teal-100 cursor-pointer rounded-full hover:bg-teal-500 hover:text-white py-3 px-8 font-bold ml-4">
+                <Link to='/register' className="duration-200 bg-teal-100 cursor-pointer rounded-full hover:bg-teal-500 hover:text-white py-3 px-8 font-bold ml-4">
                     Register
                 </Link> 
             </div>
