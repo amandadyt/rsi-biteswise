@@ -1,6 +1,5 @@
 import React from "react";
 import { Link } from "react-router-dom";
-import { FaUserCircle } from "react-icons/fa";
 
 const Navbar = () => {
     return(
@@ -9,7 +8,7 @@ const Navbar = () => {
                 <p className="font-bold text-3xl">BitesWise</p>
             </div>
             <div className="font-medium">
-                <Link to='/' className="duration-200 cursor-pointer text-teal-700 hover:text-teal-500 py-3 px-8 font-bold">
+                <Link to='/beranda' className="duration-200 cursor-pointer text-teal-700 hover:text-teal-500 py-3 px-8 font-bold">
                     Beranda
                 </Link>
                 <Link to='/kalkulator' className="duration-200 cursor-pointer text-teal-700 hover:text-teal-500 py-3 px-8 font-bold">

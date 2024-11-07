@@ -21,9 +21,11 @@ const Register = () => {
 
 
                 <div className="w-full flex flex-col px-8 pt-4">
-                    <button type='submit' className="w-full bg-emerald-500 py-4 my-1 text-white rounded-md text-center font-medium flex items-center justify-center hover:bg-emerald-700">
-                        Create Account
-                    </button>
+                    <Link to='/beranda'>
+                        <button type='submit' className="w-full bg-emerald-500 py-4 my-1 text-white rounded-md text-center font-medium flex items-center justify-center hover:bg-emerald-700">
+                            Create Account
+                        </button>
+                    </Link>
                 </div>
 
                 <div className='w-full flex items-center justify-center relative p-8'>

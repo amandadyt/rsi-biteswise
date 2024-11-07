@@ -19,9 +19,11 @@ const Login = () => {
                 </form>
 
                 <div className="w-full flex flex-col px-8 pt-4">
-                    <button className="w-full bg-emerald-500 py-4 my-1 text-white rounded-md text-center font-medium flex items-center justify-center hover:bg-emerald-700">
-                        Sign In
-                    </button>
+                    <Link to='/beranda'>
+                        <button className="w-full bg-emerald-500 py-4 my-1 text-white rounded-md text-center font-medium flex items-center justify-center hover:bg-emerald-700">
+                            Sign In
+                        </button>
+                    </Link>
                         
                     <Link to='/register'>
                         <button className="w-full bg-white py-4 my-1 text-blue-600 font-medium border border-blue-600 rounded-md text-center flex items-center justify-center hover:bg-blue-600 hover:text-white">

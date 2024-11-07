@@ -1,11 +1,11 @@
-import LandingPageLayout from "../components/Layout/LandingPageLayout";
+import MainPageLayout from "../components/Layout/MainPageLayout";
 import KatalogMenu from '../components/Features/KatalogMenu'
 
 const LandingPages = () => {
     return(
-        <LandingPageLayout>
+        <MainPageLayout>
             <KatalogMenu/>
-        </LandingPageLayout>
+        </MainPageLayout>
     )
 }
 

@@ -6,7 +6,7 @@ import { FcPaid } from "react-icons/fc";
 
 const Deskripsi = () => {
     return(
-        <div className="text-center flex-col flex font-poppins w-full bg-orange-100 p-16">
+        <div id="fitur" className="text-center flex-col flex font-poppins w-full bg-orange-100 p-16">
             
             <div className="">
                 <h1 className="font-bold text-2xl">Fitur Kami</h1>

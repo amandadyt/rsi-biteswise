@@ -1,13 +1,13 @@
 import React from "react";
 import MainPageLayout from "../components/Layout/MainPageLayout";
-import BMI from '../components/Features/BMI'
+import ProfilePage from "../components/Features/ProfilePage";
 
 const LandingPages = () => {
-    return(
-        <MainPageLayout>
-            <BMI/>
-        </MainPageLayout>
-    )
-}
+  return (
+    <MainPageLayout>
+      <ProfilePage />
+    </MainPageLayout>
+  );
+};
 
 export default LandingPages;

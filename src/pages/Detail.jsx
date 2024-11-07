@@ -1,12 +1,12 @@
 import React from "react";
-import LandingPageLayout from "../components/Layout/LandingPageLayout";
+import MainPageLayout from "../components/Layout/MainPageLayout";
 import DetailProduk from '../components/Features/DetailProduk'
 
 const LandingPages = () => {
     return(
-        <LandingPageLayout>
+        <MainPageLayout>
             <DetailProduk/>
-        </LandingPageLayout>
+        </MainPageLayout>
     )
 }
 

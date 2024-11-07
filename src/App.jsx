@@ -6,6 +6,8 @@ import Kalkulator from './pages/Kalkulator';
 import Keranjang from './pages/Keranjang';
 import Katalog from './pages/Katalog';
 import Detail from './pages/Detail';
+import Profil from './pages/Profil';
+import Beranda from './pages/Beranda';
 
 function App() {
   return (
@@ -18,6 +20,8 @@ function App() {
           <Route path='/keranjang' element={<Keranjang/>}></Route>
           <Route path='/katalog' element={<Katalog/>}></Route>
           <Route path='/detail' element={<Detail/>}></Route>
+          <Route path='/profil' element={<Profil/>}></Route>
+          <Route path='/beranda' element={<Beranda/>}></Route>
         </Routes>
       </Router>
     )

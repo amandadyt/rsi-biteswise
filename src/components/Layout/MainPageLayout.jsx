@@ -1,15 +1,15 @@
 import React from "react";
-import NavbarLogin from "../Partials/NavbarLogin";
+import Navbar from "../Partials/Navbar";
 import Footer from "../Partials/Footer";
 
-const LandingPageLayout = ({ children }) => {
+const MainPageLayout = ({ children }) => {
     return (
       <div>
-        <NavbarLogin />
+        <Navbar />
         {children}
         <Footer />
       </div>
     );
   };
 
-export default LandingPageLayout;
+export default MainPageLayout;

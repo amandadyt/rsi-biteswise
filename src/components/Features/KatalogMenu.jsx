@@ -4,7 +4,7 @@ import { Link } from "react-router-dom";
 
 function KatalogMenu() {
   return (
-    <div className="font-poppins container mx-auto my-10 px-10">
+    <div className="font-poppins container mx-auto my-10 px-10 h-[750px]">
       {/* Search Bar */}
       {/* <div className="flex justify-center mb-4">
         <input

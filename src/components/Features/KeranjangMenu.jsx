@@ -12,7 +12,7 @@ function ShoppingCart() {
   };
 
   return (
-    <section className="px-20 font-poppins container mx-auto my-10">
+    <section className="px-20 font-poppins container mx-auto my-10 h-[750px]">
       <div className="flex justify-between items-center mb-5">
         <div className="flex items-center space-x-3">
             <Link to='/detail'>
