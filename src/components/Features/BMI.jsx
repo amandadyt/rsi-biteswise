@@ -36,7 +36,7 @@ const BMI = () => {
 
     return (
         <div>
-            <div className='w-full h-[750px] flex content font-poppins'>
+            <div className='w-full min-h-screen flex content font-poppins'>
                 <div className='relative w-1/2 flex flex-col bg-teal-50 p-24 pt-20'>
                     <p className='text-5xl font-bold'>Kalkulator BMI</p>
                     <p className='text-base py-1 w-[350px] mt-4'>Berat badan ideal adalah impian semua orang. Tidak hanya memiliki bentuk tubuh yang menunjang penampilan, berat badan ideal juga menandakan kondisi tubuh yang sehat. Bagaimana denganmu? Yuk, hitung sekarang di Kalkulator BMI!</p>

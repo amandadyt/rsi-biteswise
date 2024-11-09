@@ -7,11 +7,11 @@ function ProfilePage() {
   const [profilePhoto, setProfilePhoto] = useState(null);
 
   const user = {
-    username: "Saskeh_Pohon",
-    name: "Faridaaaaaaaaa",
-    email: "email@example.com",
+    username: "david",
+    name: "David Nababan",
+    email: "david@gmail.com",
     phone: "+628XXXXXXXX",
-    address: "Jl. Kenangan No.123, Kota ABC, Provinsi XYZ",
+    address: "Jl. Terus No.123, Kota ABC, Provinsi XYZ",
   };
 
   const [profileData, setProfileData] = useState(user);
@@ -91,7 +91,7 @@ function ProfilePage() {
             )}
           </div>
           <h2 className="text-base font-semibold mt-3 text-gray-700">
-            HI, {profileData.username}
+            Hi, {profileData.username}!
           </h2>
           <button
             onClick={isEditing ? handleViewClick : handleEditClick}

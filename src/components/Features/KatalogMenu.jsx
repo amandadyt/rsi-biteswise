@@ -23,7 +23,7 @@ function KatalogMenu() {
           <h2 className="font-bold text-2xl text-center">Healthy Food Catalog</h2>
         </div>
 
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-4">
+        <div className="grid grid-cols-1 md:grid-cols-3 gap-14 pt-6 px-24">
           {/* Product Card Example */}
           <div className="card h-full shadow-lg border border-gray-200 rounded-lg">
             <img
