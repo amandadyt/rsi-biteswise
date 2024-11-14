@@ -3,7 +3,7 @@ import { Link, animateScroll as scroll } from "react-scroll";
 
 const Navbar = () => {
     return(
-        <div className="flex-no-wrap relative w-full flex items-center justify-between p-7 font-poppins shadow-md">
+        <div className="sticky top-0 flex-no-wrap relative w-full flex items-center justify-between p-7 font-poppins shadow-md bg-white">
             <div>
                 <p className="font-bold text-3xl">BitesWise</p>
             </div>

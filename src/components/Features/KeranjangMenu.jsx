@@ -2,13 +2,26 @@ import React, { useState } from 'react';
 import { FaArrowLeft, FaSearch } from "react-icons/fa";
 import CartItem from './CartItem';
 import { Link } from "react-router-dom";
+import PopUp from "../Partials/PopUp";
 
 function ShoppingCart() {
   const [totalPrice, setTotalPrice] = useState(20000);
-
+  const [isModalOpen, setIsModalOpen] = useState(false);
   // Fungsi untuk mengubah total harga ketika kuantitas berubah
   const handleTotalChange = (change) => {
     setTotalPrice((prevTotal) => prevTotal + change);
+  };
+
+  const handleOrder = () => {
+    setIsModalOpen(true); // Open the modal when the order button is clicked
+};
+
+  const closeModal = () => {
+      setIsModalOpen(false);
+  };
+
+  const goHome = () => {
+      closeModal();
   };
 
   return (
@@ -66,11 +79,22 @@ function ShoppingCart() {
           <span className="text-green-600 font-semibold text-xl">
             Rp{totalPrice.toLocaleString("id-ID")}
           </span>
-          <button className="duration-300 px-6 py-3 bg-green-600 text-white font-semibold rounded-full hover:bg-green-700">
+          <button 
+            className="duration-300 px-6 py-3 bg-green-600 text-white font-semibold rounded-full hover:bg-green-700"
+            onClick={handleOrder}>
             Buat Pesanan
           </button>
         </div>
       </div>
+
+      {isModalOpen && (
+                <PopUp
+                    message="Pesanan Berhasil" 
+                    onClose={closeModal} 
+                    onGoHome={goHome} 
+                />
+            )}
+
     </section>
   );
 }

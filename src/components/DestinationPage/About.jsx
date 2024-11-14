@@ -4,7 +4,7 @@ import homeicon from '../../../src/assets/homeicon.png'
 
 const Deskripsi = () => {
     return(
-        <div id="tentang" className="flex flex-col text-center font-poppins w-full bg-teal-50 p-16">
+        <div id="tentang" className="min-h-screen flex flex-col text-center font-poppins w-full bg-teal-50 p-16">
             
             <div className="flex justify-center">
                 <div className="justify-items-center">

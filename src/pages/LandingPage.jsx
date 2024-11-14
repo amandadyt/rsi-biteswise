@@ -1,13 +1,13 @@
 import React from "react";
 import LandingPageLayout from "../components/Layout/LandingPageLayout";
 import Deskripsi from '../components/DestinationPage/About'
-import OurFeatures from '../components/DestinationPage/OurFeatures'
+import Preview from '../components/DestinationPage/Preview'
 
 const LandingPage = () => {
     return(
         <LandingPageLayout>
             <Deskripsi/>
-            <OurFeatures/>
+            <Preview/>
         </LandingPageLayout>
     )
 }

@@ -81,9 +81,11 @@ function ProductDetail() {
                 <FaPlus />
               </button>
             </div>
-            <button className="duration-300 hover:bg-gray-300 bg-gray-200 text-black px-4 py-2 rounded-full">
-              <Link to='/keranjang' className="text-sm">Tambahkan ke keranjang</Link>
-            </button>
+            <Link to='/keranjang' className="text-sm">
+              <button className="duration-300 hover:bg-gray-300 bg-gray-200 text-black px-4 py-2 rounded-full">
+                  Tambahkan ke keranjang
+              </button>
+            </Link>
           </div>
         </div>
       </div>
