@@ -93,7 +93,7 @@ function ShoppingCart() {
                     onClose={closeModal} 
                     onGoHome={goHome} 
                 />
-            )}
+      )}
 
     </section>
   );

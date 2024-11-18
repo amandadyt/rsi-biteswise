@@ -1,6 +1,8 @@
 
 import React, { useState } from "react";
 import { FaEdit, FaEye, FaSave, FaTimes, FaCamera } from "react-icons/fa";
+import LogoutPopUp from "../Partials/LogoutPopUp";
+import { IoLogOutOutline } from "react-icons/io5";
 
 function ProfilePage() {
   const [isEditing, setIsEditing] = useState(false);
@@ -15,6 +17,7 @@ function ProfilePage() {
   };
 
   const [profileData, setProfileData] = useState(user);
+  const [isModalOpen, setIsModalOpen] = useState(false);
 
   const handleEditClick = () => {
     setIsEditing(true);
@@ -44,6 +47,20 @@ function ProfilePage() {
       reader.readAsDataURL(file);
     }
   };
+
+  const handleLogout = () => {
+    setIsModalOpen(true); 
+  };
+
+  const closeModal = () => {
+      setIsModalOpen(false);
+  };
+
+  const sureLogout = () => {
+      closeModal();
+      // ini nanti sesuaikan kalo logout gmnh ia backend
+  };
+
 
   const labels = {
     username: "Username",
@@ -91,11 +108,11 @@ function ProfilePage() {
             )}
           </div>
           <h2 className="text-base font-semibold mt-3 text-gray-700">
-            Hi, {profileData.username}!
+            Hi, {profileData.name}!
           </h2>
           <button
             onClick={isEditing ? handleViewClick : handleEditClick}
-            className="text-blue-500 underline"
+            className="text-teal-700"
           >
             {isEditing ? (
               <>
@@ -107,12 +124,25 @@ function ProfilePage() {
               </>
             )}
           </button>
+
+          <div>
+            <button
+              className="mt-2 rounded-full bg-teal-500 text-white text-sm hover:bg-teal-700 px-4 py-1"
+              onClick={handleLogout}>
+                Log Out
+                <IoLogOutOutline className="inline ml-2"/>
+            </button>
+          </div>
+
         </div>
+
       </aside>
+
+      
 
       {/* Main Content */}
       <main className="flex-1 p-6 md:p-10">
-        <div className="form-container mx-auto border border-blue-500 p-6 bg-white rounded-lg shadow-md max-w-4xl">
+        <div className="form-container mx-auto border border-teal-700 p-6 bg-white rounded-lg shadow-md max-w-4xl">
           {isEditing ? (
             <>
               <h1 className="text-xl font-semibold mb-4">Edit Profil</h1>
@@ -144,7 +174,7 @@ function ProfilePage() {
                 </button>
                 <button
                   onClick={handleSaveClick}
-                  className="btn bg-green-500 text-white hover:bg-green-600 py-2 px-4 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-300"
+                  className="btn bg-teal-500 text-white hover:bg-teal-600 py-2 px-4 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-300"
                 >
                   <FaSave className="inline" /> Simpan Perubahan
                 </button>
@@ -164,6 +194,14 @@ function ProfilePage() {
             </>
           )}
         </div>
+
+        {isModalOpen && (
+                <LogoutPopUp
+                    message="Apakah Anda yakin?" 
+                    onClose={closeModal} 
+                    onOut={sureLogout} 
+                />
+        )}
       </main>
     </div>
   );
